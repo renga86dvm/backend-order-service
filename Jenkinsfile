@@ -7,7 +7,7 @@ pipeline {
         ECR_REPO       = "rorder-service"
         ECR_URI        = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}"
         ECS_CLUSTER    = "rdev-cluster"
-        ECS_SERVICE    = "userservice-task-service-0qigdupy"
+        ECS_SERVICE    = "rorder-service-service-0f8wol8j"
         IMAGE_TAG      = "${BUILD_NUMBER}"
     }
 
