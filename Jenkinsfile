@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        AWS_REGION     = "us-east-1"
-        AWS_ACCOUNT_ID = "017820689407"
-        ECR_REPO       = "rorder-service"
-        ECR_URI        = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}"
-        ECS_CLUSTER    = "rdev-cluster"
-        ECS_SERVICE    = "rorder-service-service-0f8wol8j"
-        IMAGE_TAG      = "${BUILD_NUMBER}"
+        AWS_REGION = "us-east-1"
+        ECR_REPO = "order-service"
+        ECS_CLUSTER = "dev_cluster1"
+        ECS_SERVICE = "orderservice-task-service-3qcw1rvs"
+        IMAGE_TAG = "${BUILD_NUMBER}"
+        AWS_ACCOUNT_ID = "861990677861"
+        ECR_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}"
     }
 
     stages {
